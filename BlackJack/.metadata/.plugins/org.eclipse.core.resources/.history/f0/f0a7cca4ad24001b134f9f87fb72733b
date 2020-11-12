@@ -1,0 +1,5 @@
+package ut;
+
+public enum Face {
+	ACE,TWO,THREE
+}
