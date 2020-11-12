@@ -1,2 +1,0 @@
-user : takeda
-Card Play
