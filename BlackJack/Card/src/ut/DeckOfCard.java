@@ -8,19 +8,18 @@ public class DeckOfCards
      private static final SecureRandom randomNumbers = new SecureRandom();
   
     // constructor fills deck of Cards
-   public DeckOfCards()
-   {
-      String[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", 
-         "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-      String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
+	public DeckOfCards()
+	{
+		String[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", 
+			"Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+		String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
 
-      deck = new Card[NUMBER_OF_CARDS]; // create array of Card objects
-      currentCard = 0; // first Card dealt will be deck[0]
+		deck = new Card[NUMBER_OF_CARDS]; // create array of Card obj	ects
+		currentCard = 0; // first Card dealt will be deck[0]
 
-      // populate deck with Card objects
-      for (int count = 0; count < deck.length; count++) 
-         deck[count] = 
-            new Card(faces[count % 13], suits[count / 13] , (count % 13)+1 ,(count / 13)+1);
+		// populate deck with Card objects
+		for (int count = 0; count < deck.length; count++) 
+			deck[count] = new Card(faces[count % 13], suits[count / 13] , (count % 13)+1 ,(count / 13)+1);
    } 
 
    // shuffle deck of Cards with one-pass algorithm
@@ -41,4 +40,12 @@ public class DeckOfCards
          deck[second] = temp;            
       } 
    }
+   public Card dealCard()
+   {
+      // determine whether Cards remain to be dealt
+      if (currentCard < deck.length)
+         return deck[currentCard++]; // return current Card in array
+      else        
+         return null; // return null to indicate that all Cards were dealt
+   } 
 }
