@@ -20,4 +20,16 @@ public class Player
 	{
 		this.numOfWins = num;
 	}
+	public int getNumOfWins()
+	{
+		return numOfWins;
+	}
+	public void setToken(int token)
+	{
+		this.token = token;
+	}
+	public int getToken()
+	{
+		return token;
+	}
 }
