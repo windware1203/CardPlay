@@ -1,5 +1,8 @@
 package ut;
-public class Player 
+/*
+ *Informations of player
+ */
+public class Player
 {
 	private String name;
 	private int numOfWins;
