@@ -3,7 +3,7 @@ package ut;
  * Dealing with Card
  */
 import java.security.SecureRandom;
-public class DeckOfCards
+public class DeckOfCard
 {
     private Card[] deck; // array of Card objects
     private int currentCard;
@@ -12,7 +12,7 @@ public class DeckOfCards
      private static final SecureRandom randomNumbers = new SecureRandom();
   
     // constructor fills deck of Cards
-	public DeckOfCards()
+	public DeckOfCard()
 	{
 		String[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", 
 			"Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
