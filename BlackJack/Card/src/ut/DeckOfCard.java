@@ -10,20 +10,23 @@ public class DeckOfCard
     private static final int NUMBER_OF_CARDS = 52; // constant # of Cards
     // random number generator
      private static final SecureRandom randomNumbers = new SecureRandom();
-  
+    Face faces ;
+	Suit suits ;
     // constructor fills deck of Cards
 	public DeckOfCard()
 	{
-		String[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", 
+		/*String[] faces = {"Ace", "Deuce", "Three", "Four", "Five", "Six", 
 			"Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
-		String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
-
+		String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};*/
+		
 		deck = new Card[NUMBER_OF_CARDS]; // create array of Card obj	ects
 		currentCard = 0; // first Card dealt will be deck[0]
-
+		
 		// populate deck with Card objects
-		for (int count = 0; count < deck.length; count++) 
-			deck[count] = new Card(faces[count % 13], suits[count / 13] , (count % 13)+1 ,(count / 13)+1);
+		for (int count = 0; count < deck.length; count++)
+		{
+			deck[count] = new Card(faces.getface(count % 13),suits.getsuit(count / 13));//  
+		}
    } 
 
    // shuffle deck of Cards with one-pass algorithm

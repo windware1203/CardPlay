@@ -1,6 +1,6 @@
 package ut;
 
-public class CardDriver 
+public class CardGame 
 {
   public static void main(String arg[])
   {

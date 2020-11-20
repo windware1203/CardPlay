@@ -2,19 +2,27 @@ package ut;
 
 public class Card 
 {
-	private final String face; 
-   	private final String suit; 
+	private Face faces; 
+   	private Suit suits; 
    	
-   	//no-arg constructor
+   	//no argument constructor
    	public Card()
    	{
-		this.face = "";
-		this.suit = "";
+		this.faces = null;
+		this.suits = null;
 	}
    	// four-argument constructor initializes card's face and suit
- 	  public Card(String face, String suit, int faIval,int suIval)
+ 	 public Card(Face face, Suit suit)
   	 {
- 	    	this.face = face;
-  	    	this.suit = suit; 
-	  }
+ 	    	this.faces = face;
+  	    	this.suits = suit; 
+	 }
+ 	 public Face getFaces()
+ 	 {
+ 		 return faces;
+ 	 }
+ 	 public Suit getSuits()
+ 	 {
+ 		 return suits;
+ 	 }
 }
