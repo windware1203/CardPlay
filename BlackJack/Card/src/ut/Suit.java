@@ -1,8 +1,8 @@
 package ut;
-public enum Suit 
+public enum Suit //the suit of the card
 {
 	Clubs,Diamonds,Hearts,Spades;
-	public  Suit getsuit(int i)
+	public   Suit getsuit(int i)
 	{
 
         switch(i){

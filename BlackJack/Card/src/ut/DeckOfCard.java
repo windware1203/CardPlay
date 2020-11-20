@@ -1,6 +1,6 @@
 package ut;
 /*
- * Dealing with Card
+ * Dealing with Card.
  */
 import java.security.SecureRandom;
 public class DeckOfCard

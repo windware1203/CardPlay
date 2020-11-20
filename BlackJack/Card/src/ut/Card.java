@@ -1,5 +1,7 @@
 package ut;
-
+/*
+ * The informations of card
+ * */
 public class Card 
 {
 	private Face faces; 
