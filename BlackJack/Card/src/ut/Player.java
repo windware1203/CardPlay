@@ -6,7 +6,7 @@ public class Player
 {
 	private String name;
 	private int numOfWins;
-	private int token;
+	private int token;//Tokens the player had for this BlackJack Card game. 
 	
 	public Player()
 	{
