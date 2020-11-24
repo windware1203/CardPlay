@@ -3,7 +3,7 @@ package ut;
 public enum Face //the face of the card
 {
 	Ace,Deuce,Three,Four,Five,Six,Seven,Eight,Nine,Ten,Jack,Queen,King;
-	public   Face getface(int i)
+	public Face getface(int i)
 	{
 
         switch(i)
