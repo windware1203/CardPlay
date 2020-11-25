@@ -10,7 +10,7 @@ public class CardGameRule
 	
 	public CardGameRule()
 	{
-		numOfplayer = 0;
+		this.numOfplayer = 0;
 		arrPlayer.clear();
 	}
 	public CardGameRule(int numOfPlayer)
