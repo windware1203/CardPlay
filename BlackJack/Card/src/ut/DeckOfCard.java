@@ -9,9 +9,9 @@ public class DeckOfCard
     private int currentCard;
     private static final int NUMBER_OF_CARDS = 52; // constant # of Cards
     // random number generator
-     private static final SecureRandom randomNumbers = new SecureRandom();
+    private static final SecureRandom randomNumbers = new SecureRandom();
     Face faces ;
-	Suit suits ;
+    Suit suits ;
     // constructor fills deck of Cards
 	public DeckOfCard()
 	{
