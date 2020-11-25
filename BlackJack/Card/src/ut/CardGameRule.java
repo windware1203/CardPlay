@@ -20,6 +20,6 @@ public class CardGameRule
 	}
 	public void start()
 	{
-		CardGameRule go = new CardGameRule(Console.getInt(null));
+		CardGameRule go = new CardGameRule(Console.getInt("nums of players"));
 	}
 }
