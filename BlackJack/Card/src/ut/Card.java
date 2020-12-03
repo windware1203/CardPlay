@@ -19,6 +19,7 @@ public class Card
  	    	this.faces = face;
   	    	this.suits = suit; 
 	 }
+	//G
  	 public Face getFaces()
  	 {
  		 return faces;
