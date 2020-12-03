@@ -2,4 +2,4 @@
 There are two version of the CardPlay game.<br>
 - BlackJack <br>
 - whose card is the bigger one.<br>
-***BY Takeda Nana***
+##### ***BY Takeda Nana***
