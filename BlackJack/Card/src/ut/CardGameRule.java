@@ -7,7 +7,7 @@ public class CardGameRule
 {
 	private int numOfplayer;
 	ArrayList<Player> arrPlayer = new ArrayList<Player>();
-	
+	DeckOfCard deckOfCard = new DeckOfCard();
 	public CardGameRule()
 	{
 		this.numOfplayer = 0;
