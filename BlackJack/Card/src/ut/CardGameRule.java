@@ -6,19 +6,19 @@ import java.util.*;
 public class CardGameRule 
 {
 	private int numOfplayer;
-	private int tokenContainer;
+	private int tokenTable;
 	ArrayList<Player> arrPlayer = new ArrayList<Player>();
 	DeckOfCard deckOfCard = new DeckOfCard();
 	public CardGameRule()
 	{
 		this.numOfplayer = 0;
-		this.tokenContainer = 0;
+		this.tokenTable = 0;
 		arrPlayer.clear();
 	}
 	public CardGameRule(int numOfPlayer)
 	{
 		this.numOfplayer = numOfPlayer;
-		this.tokenContainer = 0;
+		this.tokenTable = 0;
 		arrPlayer.clear();
 	}
 	public void start()
