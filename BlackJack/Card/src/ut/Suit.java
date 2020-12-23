@@ -1,5 +1,8 @@
 package ut;
-public enum Suit //the suit of the card
+/*
+ *	the suit of the card
+ */
+public enum Suit 
 {
 	Clubs,Diamonds,Hearts,Spades;
 	public Suit getsuit(int i)
